@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Freelancer - Start Bootstrap Theme</title>
+        <title>Antkakliai Jūsų gyvūnams</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -57,7 +57,7 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <p class=" h5  text-center text-uppercase text-secondary mb-0 ">Jei norite susikurti individualų antkaklį - parašykite mums laišką apibūdinantį jį. Arba prisekite jo paveiksliuką. </p>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -66,7 +66,7 @@
                 </div>
                 <!-- Contact Section Form-->
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
+                    <div class="col-lg-6 ">
                         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
                         <form id="contactForm" name="sentMessage" novalidate="novalidate">
                             <div class="control-group">
@@ -85,8 +85,10 @@
                             </div>
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Phone Number</label>
-                                    <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number." />
+                                    <!-- <label>Attach a file</label> -->
+                                    <!-- <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number." /> -->
+                                    <label class="form-label" for="customFile">Attach a file</label>
+                                    <input type="file" class="form-control" id="customFile" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -101,6 +103,9 @@
                             <div id="success"></div>
                             <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
                         </form>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <img src="/assets/img/shiba.png" class="float-right ">
                     </div>
                 </div>
             </div>
