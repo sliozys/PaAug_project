@@ -9990,6 +9990,13 @@ h3 {
     line-height: 2.5rem;
   }
 }
+.duk {
+  padding: 20pt;
+}
+.duk div {
+  padding: 20pt;
+}
+
 
 .divider-custom {
   margin: 1.25rem 0 1.5rem;
