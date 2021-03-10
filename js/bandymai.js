@@ -98,3 +98,51 @@
 //  });   
 
 console.log('kazkas')
+
+
+
+
+PRADINIS PRODUKTU GRIDS 
+products.map((products)=> {
+  document.querySelector("#portfolioGrid").innerHTML += `
+     <div class="modal-content col-4">
+           <div class="modal-body text-center">
+               <div class="container">
+                   <div class="row justify-content-center">
+                       <div class="col-lg-12">
+                           <!-- Portfolio Modal - Title-->
+                           <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 pavadinims" >${products.title}</h2>
+                           <!-- Icon Divider-->
+                           <div class="divider-custom">
+                               <div class="divider-custom-line"></div>
+                               <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                               <div class="divider-custom-line"></div>
+                           </div>
+                           <!-- Portfolio Modal - Image-->
+                           <img  class="img-fluid rounded mb-5 nuotrauka" src="${products.image}" alt="" />
+                           <!-- Portfolio Modal - Text-->
+                           <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                           <!-- <button class="btn btn-primary" data-dismiss="modal">
+                               <i class="fas fa-times fa-fw"></i>
+                               Close Window
+                           </button> -->
+                           <p class="h2 text-secondary kaina" >${products.price}<i class="fas fa-euro-sign"></i></p>
+                           <button class="btn-sm btn-outline-info btn-block addToCardededed"> 
+                               <i class="h3">
+                                   Add to Cart  
+                               </i>
+                                 <i class="https://github.com/sliozys/PaAug_project.git" aria-hidden="true">
+                               </i>
+                           </button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+  `;
+});  
+
+
+
+
+// onchange=""

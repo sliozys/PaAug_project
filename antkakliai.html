@@ -36,13 +36,7 @@
                         <!-- KREPŠELIO MYGTUKS HEADERI -->
                         <li class="nav-item mx-0 mx-lg-1">
                             <!-- NAUJAS IS EIMANTO -->
-                            <button class="btn btn-outline-info my-2" id="cart" data-toggle="modal" data-target="#cart-modal">Cart</button>
-
-                            <!-- SENS MYGTUKS -->
-                            <!-- <button  class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger btn-outline-success" type="button" class="btn btn-secondary" onclick="location.href='krepselis.html'">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
-                                </svg> -->
+                            <button class="btn btn-outline-info my-2" id="cart" data-toggle="modal" data-target="#cart-modal" onclick="location.href='krepselis.html'">Cart</button>
                           </button>
                         </li>
                     </ul>
@@ -63,7 +57,18 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Grid Items-->
-                <!-- CIA EINA MAZIEJI  -->
+
+                <!-- FILTRAS -->
+                ​<div class="dropdown d-flex justify-content-end">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Filter
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><button class="btn btn-light" onclick="filtras1()">Price: Low to High</button></li>
+                      <li><button class="btn btn-light" onclick="filtras2()">Price: High to Low</button></li>
+                      <li><button class="btn btn-light" onclick="filtras3()">By Name</button></li>
+                    </ul>
+                  </div>
+                  <!-- CIA EINA MAZIEJI  -->
                 <div class="row justify-content-center" id="portfolioGrid">
 
 
@@ -120,6 +125,7 @@
             <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
         </div>
         <!-- ANTKALIU POPUPAI-->
+        
         <div class="container" id="portfolioPopUp"> 
 
         </div>
@@ -135,6 +141,7 @@
         <!-- Core theme JS-->
         
         <!-- <script src="js/scriptCart.js" async></script> -->
-        <script src="js/scripts.js" async></script>
+        <!-- <script src="js/scripts.js" async></script> -->
+        <script src="js/cartAndGrid.js" async></script>
     </body>
 </html>
